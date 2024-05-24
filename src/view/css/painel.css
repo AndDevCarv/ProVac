@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --verde-backgroud: #333B1E;
+    --branco-fonte: #FFFFFF;
+    --marrom: #613505;
+    --amarelo: #EBC181;
+    --verde: green;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: var(--branco-fonte);
+}
+
+body {
+    background-color: var(--verde-backgroud);
+    background-image: url(img/3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.cabecalho{
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    gap: 1em;
+    font-size: 125%;   
+}
+
+.menu { 
+    border-bottom: 3px solid #000000;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 13.5%;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+.conteiner-painel-titulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteiner-painel-recente{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    overflow-x: auto;
+    
+}
+
+.conteiner-painel-titulo h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 15px 0px 5px;
+}
+
+.conteiner-painel-informacoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteiner-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid var(--amarelo) 2px;
+    overflow: hidden;
+    margin: 10px;
+    width: 450px;
+    height: auto;
+}
+
+.conteiner-informacoes p{
+    text-align: center;
+    margin: 2px;
+}
+
+.conteiner-botoes {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.botao-excluir, .botao-editar {
+    background-color: transparent;
+    border: solid 2px var(--amarelo);
+    border-radius: 5px;
+    padding: 3px;
+    transition: 0.2s;
+}
+
+.botao-excluir:hover {
+    background-color: #ab1010;
+    color: #000000;
+    border-color: #000000;
+    cursor: pointer;
+    
+}
+
+.botao-editar:hover {
+    background-color: var(--verde);
+    color: #000000;
+    border-color: #000000;
+    cursor: pointer;
+    
+}
+
+.botao-excluir:focus,
+.botao-excluir:active {
+    background-color: transparent; 
+    border-color: var(--amarelo);  
+    box-shadow: none
+}
+
+.botao-editar:focus,
+.botao-editar:active {
+    background-color: transparent; 
+    border-color: var(--amarelo);  
+    box-shadow: none;
+}
